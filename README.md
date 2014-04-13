@@ -53,7 +53,7 @@ Color Tab:
 
 ![alt text](https://raw.githubusercontent.com//mstokes5/freshBuntu/master/images/color.png "Terminal Color Tab")
 
-Color Tab: 
+Terminal: 
 
 ![alt text](https://raw.githubusercontent.com//mstokes5/freshBuntu/master/images/term.png "Terminal Color Tab")
 
@@ -74,9 +74,9 @@ VLC
 Folder Bookmarks and ShortCuts
 ============
 
-Color Tab: 
+Bookmarks at the begining:
 ![alt text](https://raw.githubusercontent.com//mstokes5/freshBuntu/master/images/book_start.png "Before")
 
-Color Tab: 
+Added bookmarks, and setup links for Music, Pictures, etc. to DropBox folders:
 ![alt text](https://raw.githubusercontent.com//mstokes5/freshBuntu/master/images/book_after.png "After")
 

@@ -50,10 +50,12 @@ Linux Terminal
 Background Tab - ~50% Transparent background
 
 Color Tab: 
-![alt text](https://github.com/mstokes5/freshBuntu/tree/master/images/color.png "Terminal Color Tab")
+
+![alt text](https://raw.githubusercontent.com//mstokes5/freshBuntu/master/images/color.png "Terminal Color Tab")
 
 Color Tab: 
-![alt text](https://github.com/mstokes5/freshBuntu/tree/master/images/term.png "Terminal Color Tab")
+
+![alt text](https://raw.githubusercontent.com//mstokes5/freshBuntu/master/images/term.png "Terminal Color Tab")
 
 Gimp
 ===========
@@ -73,8 +75,8 @@ Folder Bookmarks and ShortCuts
 ============
 
 Color Tab: 
-![alt text](https://github.com/mstokes5/freshBuntu/tree/master/images/book_before.png "Before")
+![alt text](https://raw.githubusercontent.com//mstokes5/freshBuntu/master/images/book_start.png "Before")
 
 Color Tab: 
-![alt text](https://github.com/mstokes5/freshBuntu/tree/master/images/book_after.png "After")
+![alt text](https://raw.githubusercontent.com//mstokes5/freshBuntu/master/images/book_after.png "After")
 

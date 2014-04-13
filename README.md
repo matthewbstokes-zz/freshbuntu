@@ -3,6 +3,11 @@ freshBuntu
 
 What to do when you have a fresh install of Ubuntu
 
+Chrome
+==========
+`sudo apt-get install google-chrome-stable`
+
+
 GitHub Key Pair
 ==========
 https://help.github.com/articles/generating-ssh-keys

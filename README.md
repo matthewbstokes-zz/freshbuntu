@@ -111,3 +111,7 @@ Pgadmin3
 ============
 `sudo apt-get install pgadmin3`
 
+Private Internet Access
+=============
+https://www.privateinternetaccess.com/pages/client-support/#ubuntu_openvpn_installer
+

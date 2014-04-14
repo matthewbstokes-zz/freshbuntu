@@ -85,3 +85,18 @@ Bookmarks at the begining:
 Added bookmarks, and setup links for Music, Pictures, etc. to DropBox folders:
 ![alt text](https://raw.githubusercontent.com//mstokes5/freshBuntu/master/images/book_after.png "After")
 
+Pip
+============
+`sudo apt-get install python-pip`
+
+Virtualenv and Wrapper
+============
+http://roundhere.net/journal/virtualenv-ubuntu-12-10/
+
+Postgres
+============
+https://www.digitalocean.com/community/articles/how-to-install-and-use-postgresql-on-ubuntu-12-04
+
+MakerWare
+============
+http://www.makerbot.com/support/makerware/documentation/linux-install/

@@ -97,6 +97,11 @@ Postgres
 ============
 https://www.digitalocean.com/community/articles/how-to-install-and-use-postgresql-on-ubuntu-12-04
 
+And also: `sudo apt-get install libpq-dev`
 MakerWare
 ============
 http://www.makerbot.com/support/makerware/documentation/linux-install/
+
+Python Dev
+============
+`sudo apt-get install python-dev`

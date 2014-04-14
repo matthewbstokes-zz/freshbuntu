@@ -1,7 +1,7 @@
 freshBuntu
 ==========
 
-What to do when you have a fresh install of Ubuntu
+What to do when you have a fresh install of Ubuntu. Note this will become a script in the near future.
 
 Chrome
 ==========

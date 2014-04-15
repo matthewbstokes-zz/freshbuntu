@@ -161,4 +161,9 @@ let &printexpr="(v:cmdarg=='' ? ".
 
 ```
 
+Disable Ubuntu Guest Session
+===================
+`gksu gedit /etc/lightdm/lightdm.conf`
+
+Append the following `allow-guest=false`
 

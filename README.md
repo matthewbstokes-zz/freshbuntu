@@ -171,3 +171,6 @@ Disable Ubuntu Guest Session
 
 Append the following `allow-guest=false`
 
+Wireshark
+====================
+`sudo apt-get install wireshark`

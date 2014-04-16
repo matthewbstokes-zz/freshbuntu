@@ -121,6 +121,10 @@ https://toolbelt.heroku.com/debian
 
 `wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh`
 
+Heroku Vim
+-------------
+`heroku plugins:install https://github.com/naaman/heroku-vim`
+
 Google Voice
 ==============
 https://www.google.com/tools/dlpage/hangoutplugin/thankyou.html?platform=linux_ubuntu_x86_64

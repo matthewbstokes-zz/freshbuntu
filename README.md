@@ -174,3 +174,7 @@ Append the following `allow-guest=false`
 Wireshark
 ====================
 `sudo apt-get install wireshark`
+
+VirtualBox
+====================
+`sudo apt-get install virtualbox`

@@ -178,3 +178,7 @@ Wireshark
 VirtualBox
 ====================
 `sudo apt-get install virtualbox`
+
+Tree
+=====================
+`sudo apt-get install tree`

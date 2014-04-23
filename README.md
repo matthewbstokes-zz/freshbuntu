@@ -7,7 +7,6 @@ Chrome
 ==========
 `sudo apt-get install google-chrome-stable`
 
-
 GitHub Key Pair
 ==========
 https://help.github.com/articles/generating-ssh-keys

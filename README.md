@@ -1,46 +1,57 @@
 freshBuntu
 ==========
 
-What to do when you have a fresh install of Ubuntu 12.04
+What to do when you have a fresh install of Ubuntu 12.04.
 
 Instructions
 =============
-Download or clone the repo and run the script `./freshBuntu_install.sh`
+You may be prompted multiple times to enter your root password during the install. It is recommended that before you run the install script you remote the sudo password prompt via `sudo visudo` and changing line (25):
 
+`%sudo ALL=(ALL) ALL`
+
+to
+
+`%sudo ALL=(ALL) NOPASSWD: ALL`
+
+Next, download or clone the repo and run the script: `./freshBuntu_install.sh`. 
 Packages Included
 =============
-Feel free to add/modify this script and add any of your own packages as you see fit. Currently the following packages will be installed:
+Feel free to fork and add your own packages to this script. Currently the following will be installed:
 
-* Google Chrome
-* SSH Client
-* SSH Server
-* Git
-* Filezilla
 * DropBox
+* Filezilla
 * Gimp
-* VLC
-* Pip
-* Virtualenv (set to ~/.virtualenvs)
-* Virtualenvwrapper
-* Postgres
+* Git
+* Google Chrome
+* Heroku
 * Makerware
 * Pgadmin3
+* Pip
+* Postgres
 * PrivateInternetAccess
-* Heroku
 * Python-dev
-* Wireshark
-* VirtualBox
+* SSH Client
+* SSH Server
 * Tree
+* VirtualBox
+* Virtualenv (set to ~/.virtualenvs)
+* Virtualenvwrapper
+* VLC
+* Wireshark
+
 
 Configurations
 ==============
+Additional to installing packages the following configuration settings will be modified:
+
 * Disabled SSH password login for added security. Requires id_rsa.pub of remote pcs to be in authenticated_keys
 * More userful bashrc prompt
-* Git prompts to config with your name and email
 * Bash aliases for get, and back
 * .vimrc file as provided
 * Disabled guest session
+* Git prompts to config with your name and email
+
 
 Upon Completion
 =============
-Upon the scripts completion your id_rsa.pub key should be copied to your xclip board. You should go into github and paste this into your ssh keys section.
+Upon the scripts completion your id_rsa.pub key should be copied to your xclipboard. You should go into github and paste this into your ssh keys section.

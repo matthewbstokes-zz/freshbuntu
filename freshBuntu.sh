@@ -7,7 +7,6 @@ sudo apt-get upgrade
 ###############################################################################
 # install
 ###############################################################################
-sudo apt-get -y install google-chrome-stable # google chrome
 sudo apt-get -y install openssh-client # ssh client
 sudo apt-get -y install openssh-server # ssh server
 sudo apt-get -y install git # git

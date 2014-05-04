@@ -154,6 +154,8 @@ set mouse=a
 set tabstop=2
 set shiftwidth=2
 set expandtab
+#for copying to os clipboard
+set set clipboard=unnamedplus
 
 set nospell
 
@@ -163,6 +165,9 @@ let &printexpr="(v:cmdarg=='' ? ".
     \" : system('mv '.v:fname_in.' '.v:cmdarg) + v:shell_error)"
 
 ```
+
+also so that the clipboarding works
+```get vim-gui-common```
 
 Disable Ubuntu Guest Session
 ===================

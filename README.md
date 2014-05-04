@@ -51,6 +51,9 @@ Additional to installing packages the following configuration settings will be m
 * Disabled guest session
 * Git prompts to config with your name and email
 
+During Install
+==============
+During install you will be prompted twice: first for you github `user.name` and `user.email`, second for your PrivateInternetAccess account id. 
 
 Upon Completion
 =============

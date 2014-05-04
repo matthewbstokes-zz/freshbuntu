@@ -63,7 +63,7 @@ x86_64) echo "64-Bit Architecture"
 
         # chrome
         cd /tmp/ && wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb 
-        cd /tmp/ && duso dpkg --install google-chrome-stable_current_i386.deb
+        cd /tmp/ && suoo dpkg --install google-chrome-stable_current_i386.deb
         ;;
 
 esac
@@ -91,16 +91,18 @@ echo "alias get='sudo apt-get install'" >> $HOME/.bash_aliases
 echo "alias back = 'cd...'" >> $HOME/.bash_aliases
 
 # guest session
-sudo echo 'allow-guest=false' >> /etc/lightdm/lightdm.conf
+# no permission
+# sudo echo 'allow-guest=false' >> /etc/lightdm/lightdm.conf
 
 # vimrc
-mv .vimrc $HOME/.vimrc
+# not found
+mv ./.vimrc $HOME/.vimrc
 
 # git
-echo "Enter your github user.name\n"
+echo "Enter your github user.name"
 read git_name
 git config --global user.name $git_name
-echo "Enter your github user.email\n"
+echo "Enter your github user.email"
 read git_email
 git config --global user.email $git_email
 
@@ -109,7 +111,7 @@ cd /tmp/ && wget https://www.privateinternetaccess.com/installer/install_ubuntu.
 
 # ssh key-gen for git
 # paste in github host keys
-touch $HOME/.ssh
+mkdir $HOME/.ssh
 cd $HOME/.ssh && ssh-keygen -t rsa
 ssh-add $HOME/.ssh/id_rsa
 xclip -sel clip < $HOME/.ssh/id_rsa.pub # copy to clipboard

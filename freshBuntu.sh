@@ -26,7 +26,7 @@ sudo apt-get -y install network-manager-openvpn # for pia
 sudo pip install virtualenv # virtual env
 sudo pip install virtualenvwrapper # wrapper
 
-wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh # heroku
+wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sudo sh # heroku
 
 ###############################################################################
 # makerware
@@ -58,12 +58,12 @@ x86_64) echo "64-Bit Architecture"
 *)      echo "32-Bit Architecture"
 
         # dropbox
-        cd /tmp/ && wget https://linux.dropbox.com/packages/ubuntu/dropbox_1.6.2_i386.deb
+        #cd /tmp/ && wget https://linux.dropbox.com/packages/ubuntu/dropbox_1.6.2_i386.deb
         cd /tmp/ && sudo dpkg --install dropbox_1.6.2_i386.deb
 
         # chrome
-        cd /tmp/ && wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb 
-        cd /tmp/ && suoo dpkg --install google-chrome-stable_current_i386.deb
+        #cd /tmp/ && wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb 
+        cd /tmp/ && sudo dpkg --install google-chrome-stable_current_i386.deb
         ;;
 
 esac
@@ -96,7 +96,7 @@ echo "alias back = 'cd...'" >> $HOME/.bash_aliases
 
 # vimrc
 # not found
-mv ./.vimrc $HOME/.vimrc
+mv $(dirname $0)/.vimrc $HOME/.vimrc
 
 # git
 echo "Enter your github user.name"

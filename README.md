@@ -5,7 +5,7 @@ What to do when you have a fresh install of Ubuntu 12.04
 
 Instructions
 =============
-download or clone the repo and run the script `./freshBuntu_install.sh`
+Download or clone the repo and run the script `./freshBuntu_install.sh`
 
 Packages Included
 =============

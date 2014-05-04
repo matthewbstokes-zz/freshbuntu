@@ -21,12 +21,14 @@ sudo apt-get -y install xclip # xclip
 sudo apt-get -y install libpq-dev # req for postgres
 sudo apt-get -y install postgresql postgresql-contrib # postgres
 sudo apt-get -y install pgadmin3 # pgadmin
-sudo apt-get -y install network-manager-openvpn # for pia
+sudo apt-get -y install network-manager-openvpn # for PIA
+sudo apt-get -y install libxss1 # for chrome
+sudo apt-get -y install vim # te
 
 sudo pip install virtualenv # virtual env
 sudo pip install virtualenvwrapper # wrapper
 
-wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sudo sh # heroku
+wget https://toolbelt.heroku.com/install-ubuntu.sh | sh # heroku
 
 ###############################################################################
 # makerware
@@ -58,11 +60,11 @@ x86_64) echo "64-Bit Architecture"
 *)      echo "32-Bit Architecture"
 
         # dropbox
-        #cd /tmp/ && wget https://linux.dropbox.com/packages/ubuntu/dropbox_1.6.2_i386.deb
+        cd /tmp/ && wget https://linux.dropbox.com/packages/ubuntu/dropbox_1.6.2_i386.deb
         cd /tmp/ && sudo dpkg --install dropbox_1.6.2_i386.deb
 
         # chrome
-        #cd /tmp/ && wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb 
+        cd /tmp/ && wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb 
         cd /tmp/ && sudo dpkg --install google-chrome-stable_current_i386.deb
         ;;
 
@@ -83,20 +85,16 @@ export WORKON_HOME=$HOME/.virtualenvs
 echo ". /usr/local/bin/virtualenvwrapper.sh" >> $HOME/.bashrc
 
  #http://bashrcgenerator.com/
-echo 'export PS1="\[\e[00;31m\]\A\[\e[0m\]\[\e[00;37m\] [\w] : @\[\e[0m\]"' >> $HOME/.bashrc
+echo 'export PS1="\[\e[00;31m\]\A\[\e[0m\]\[\e[00;37m\]:[\w]"' >> $HOME/.bashrc
 
 # bash_aliases
 touch $HOME/.bash_aliases
 echo "alias get='sudo apt-get install'" >> $HOME/.bash_aliases
-echo "alias back = 'cd...'" >> $HOME/.bash_aliases
-
-# guest session
-# no permission
-# sudo echo 'allow-guest=false' >> /etc/lightdm/lightdm.conf
+echo "alias back='cd...'" >> $HOME/.bash_aliases
 
 # vimrc
 # not found
-mv $(dirname $0)/.vimrc $HOME/.vimrc
+cp $(dirname $0)/.vimrc $HOME/.vimrc
 
 # git
 echo "Enter your github user.name"

@@ -81,20 +81,38 @@ sudo sed -i 's/\b#AuthorizedKeysFile/AuthorizedKeysFile/' /etc/ssh/sshd_config
 
 # virtual env
 mkdir $HOME/.virtualenvs
-export WORKON_HOME=$HOME/.virtualenvs
-echo ". /usr/local/bin/virtualenvwrapper.sh" >> $HOME/.bashrc
+v_wrap=". /usr/local/bin/virtualenvwrapper.sh"
+
+if grep -Fxq "$v_wrap" $HOME/.bashrc
+then
+  echo "virtualenv has already been created"
+else
+  export WORKON_HOME=$HOME/.virtualenvs
+  echo $v_wrap >> $HOME/.bashrc
+fi
 
  #http://bashrcgenerator.com/
-echo 'export PS1="\[\e[00;31m\]\A\[\e[0m\]\[\e[00;37m\]:[\w]"' >> $HOME/.bashrc
+$rc_prompt='export PS1="\[\e[00;31m\]\t\[\e[0m\]\[\e[00;37m\] [\w] :\[\e[0m\]"'
+if grep -Fxq "$rc_prompt" $HOME/.bashrc
+then
+  echo ".bashrc prompt already generated"
+else
+  echo $rc_prompt >> $HOME/.bashrc
+fi
 
 # bash_aliases
 touch $HOME/.bash_aliases
-echo "alias get='sudo apt-get install'" >> $HOME/.bash_aliases
-echo "alias back='cd...'" >> $HOME/.bash_aliases
+$get="alias get='sudo apt-get install'"
+if grep -Fxq "$get" $HOME/.bash_aliases
+then
+  echo "bash_aliases already created"
+else
+  echo $get >> $HOME/.bash_aliases
+  echo "alias back='cd...'" >> $HOME/.bash_aliases
+fi
 
 # vimrc
-# not found
-cp $(dirname $0)/.vimrc $HOME/.vimrc
+sudo cp $(dirname $0)/.vimrc $HOME/.vimrc
 
 # git
 echo "Enter your github user.name"

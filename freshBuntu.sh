@@ -112,7 +112,9 @@ else
 fi
 
 # vimrc
-sudo cp $(dirname $0)/.vimrc $HOME/.vimrc
+touch $HOME/.vimrc
+dir_path=$(dirname $0)
+sudo cp $dir_path/.vimrc $HOME/.vimrc
 
 # git
 echo "Enter your github user.name"

@@ -53,7 +53,27 @@ Additional to installing packages the following configuration settings will be m
 
 During Install
 ==============
-During install you will be prompted twice: first for you github `user.name` and `user.email`, second for your PrivateInternetAccess account id. 
+During install you will have the following prompts:
+
+Git
+--------------
+* git user.name
+* git user.email
+
+Private Internet Access
+---------------
+This is for the VPN. If you dont have an account just click enter, else enter your id
+
+SSH Pub Key
+---------------
+```sh
+Enter file in which to save the key (/home/you/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase): [Type a passphrase]
+# Enter same passphrase again: [Type passphrase again]
+
+```
+
+
 
 Upon Completion
 =============

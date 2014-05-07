@@ -48,7 +48,6 @@ Additional to installing packages the following configuration settings will be m
 * More userful bashrc prompt
 * Bash aliases for get, and back
 * .vimrc file as provided
-* Disabled guest session
 * Git prompts to config with your name and email
 
 During Install
@@ -66,6 +65,8 @@ This is for the VPN. If you dont have an account just click enter, else enter yo
 
 SSH Pub Key
 ---------------
+You may choose to modify where to save the `id_rsa` and whether or not to add a passphrase. You can also just click enter through these screens to use the default location and no passphrase.
+
 ```sh
 Enter file in which to save the key (/home/you/.ssh/id_rsa):
 Enter passphrase (empty for no passphrase): [Type a passphrase]
@@ -74,7 +75,9 @@ Enter passphrase (empty for no passphrase): [Type a passphrase]
 ```
 
 
-
 Upon Completion
 =============
-Upon the scripts completion your id_rsa.pub key should be copied to your xclipboard. You should go into github and paste this into your ssh keys section.
+* Your id_rsa.pub key should be copied to your xclipboard. You should go into github and paste this into your ssh keys section.
+* Create a new database in postgres using `su - postgres`. More can be seen via the following link https://www.digitalocean.com/community/articles/how-to-install-and-use-postgresql-on-ubuntu-12-04
+* Consider disabling guest login as an extra means of security via appending `allow-guest=false` to `gksu gedit /etc/lightdm/lightdm.conf`
+* Create a new virtualenv using `mkvirtualenv myawesomeproject`

@@ -81,3 +81,11 @@ Upon Completion
 * Create a new database in postgres using `su - postgres`. More can be seen via the following link https://www.digitalocean.com/community/articles/how-to-install-and-use-postgresql-on-ubuntu-12-04
 * Consider disabling guest login as an extra means of security via appending `allow-guest=false` to `gksu gedit /etc/lightdm/lightdm.conf`
 * Create a new virtualenv using `mkvirtualenv myawesomeproject`
+
+Future Additions
+==============
+* Selenium
+* Tor
+* OpenCV
+* Reaver
+* Airomon

@@ -89,3 +89,7 @@ Future Additions
 * OpenCV
 * Reaver
 * Airomon
+* Eclipse
+* Appengine
+* Android
+* LaTex

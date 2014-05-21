@@ -39,7 +39,6 @@ Feel free to fork and add your own packages to this script. Currently the follow
 * VLC
 * Wireshark
 
-
 Configurations
 ==============
 Additional to installing packages the following configuration settings will be modified:
@@ -93,3 +92,5 @@ Future Additions
 * Appengine
 * Android
 * LaTex
+* xvfb
+* pyvirtualdisplay

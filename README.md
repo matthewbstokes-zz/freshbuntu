@@ -18,6 +18,7 @@ Packages Included
 =============
 Feel free to fork and add your own packages to this script. Currently the following will be installed:
 
+* Airomon
 * DropBox
 * Filezilla
 * Gimp
@@ -33,6 +34,7 @@ Feel free to fork and add your own packages to this script. Currently the follow
 * PrivateInternetAccess
 * Python-dev
 * pyvirtualdisplay
+* Reaver
 * Selenium
 * SSH Client
 * SSH Server
@@ -89,8 +91,6 @@ Upon Completion
 
 Future Additions
 ==============
-* Reaver
-* Airomon
 * Eclipse
 * Android
 * Appengine

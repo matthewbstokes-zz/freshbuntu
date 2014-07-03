@@ -18,26 +18,34 @@ Packages Included
 =============
 Feel free to fork and add your own packages to this script. Currently the following will be installed:
 
+* Airomon
 * DropBox
 * Filezilla
 * Gimp
 * Git
 * Google Chrome
 * Heroku
+* LaTex
 * Makerware
+* OpenCV
 * Pgadmin3
 * Pip
 * Postgres
 * PrivateInternetAccess
 * Python-dev
+* pyvirtualdisplay
+* Reaver
+* Selenium
 * SSH Client
 * SSH Server
+* Tor
 * Tree
 * VirtualBox
 * Virtualenv (set to ~/.virtualenvs)
 * Virtualenvwrapper
 * VLC
 * Wireshark
+* xvfb
 
 Configurations
 ==============
@@ -83,14 +91,6 @@ Upon Completion
 
 Future Additions
 ==============
-* Selenium
-* Tor
-* OpenCV
-* Reaver
-* Airomon
 * Eclipse
-* Appengine
 * Android
-* LaTex
-* xvfb
-* pyvirtualdisplay
+* Appengine
